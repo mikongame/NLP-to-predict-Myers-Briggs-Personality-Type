@@ -1,6 +1,6 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# People Analytics
+# NLP to predict Myers-Briggs Personality Type
 *Miguel García Melgar*
 
 *Data Analytics Part-Time, Barcelona, Dec19 *
@@ -10,10 +10,10 @@
 - [Objective](#objective)
 - [Dataset](#dataset)
 - [Workflow](#workflow)
- * [Cleaning](#cleaning)
- * [Analysis](#analysis)
- * [Model Training and Evaluation](#model-training-and-evaluation)
- * [Conclusion](#conclusion)
+*  [Exploratory Data Analysis](#exploratory-data-analysis)
+*  [Preprocessing](#preprocessing)
+*  [Model Training and Evaluation](#model-training-and-evaluation)
+*  [Conclusion](#conclusion)
 - [Future Work](#future-work)
 - [Tools and requirements](#tools-requirements)
 - [References](#references)
@@ -45,7 +45,7 @@ Describe your full process of data wrangling and cleaning. Document why you chos
 * Include charts to demonstrate the effect of your work.
 * If you used Machine Learning in your final project, describe your feature selection process.
 
-### Models Training and Evaluation
+### Model Training and Evaluation
 #### Machine Learning Models
 *Include this section only if you chose to include ML in your project.*
 * Describe how you trained your model, the results you obtained, and how you evaluated those results.
