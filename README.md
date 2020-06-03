@@ -33,11 +33,22 @@ So starting with personality tests I pretend to train a model to use text we get
 To sum up, in this project I want to train a **classification model using text data features and meta-features from each user comments, messages and posts to predict their personalities**.
 
 ## Dataset
-I have been working on this dataset from Kaggle, [(MBTI) Myers-Briggs Personality Type Dataset](https://www.kaggle.com/datasnaek/mbti-type), that holds data collected through the [PersonalityCafe forum](http://personalitycafe.com/forum/), as it provides a large selection of people and their MBTI personality type, as well as what they have written. 
+I have been working on this dataset from Kaggle, [(MBTI) Myers-Briggs Personality Type Dataset](https://www.kaggle.com/datasnaek/mbti-type), that holds data collected through the [PersonalityCafe forum](http://personalitycafe.com/forum/), as it provides a large selection of people and their MBTI personality type, as well as what they have written. So I was working with only two variables, both of them being categorical, `type`(personality type code and my target) and `posts` (50 latest posts of each user).
 
-### Workflow
+## Workflow
 ### Exploratory Data Analysis
-Describe your full process of data wrangling and cleaning. Document why you chose to fill missing values, extract outliers, or create the variables you did as well as your reasoning behind the process.
+First off all I checked how the data looked like as well as it's shape, columns and dtypes. Then I confirmed there where no nulls or duplicates.
+<img src="images/output_images/mbti_count.png" align="middle">
+
+<img src="images/mbti_distr_spain.png" align="middle">
+
+When I checked for unique values and target distribution i found out that in posts there was a unique value per entrance, and tha tthe distribution was horribly unbalanced, specially considering distribuitions found by the original researchers and authors of this psychometric measure (MBTI).
+Check shape
+Check dtypes and columns
+Check nulls and duplicates
+Check unique values
+Check target variable distribution
+Target variable distribution visualization
 
 ### Preprocessing
 * Overview the general steps you went through to analyze your data in order to test your hypothesis.
@@ -62,13 +73,30 @@ Address any questions you were unable to answer, or any next steps or future ext
 
 
 ## Tools and requirements
-How did you organize your work? Did you use any tools like a trello or kanban board?
+In order to train more models simultaneously I've been both using Jupyter Notebooks thorught my own machine and also using default virtual machines throught Google Colab.
 
-What does your repository look like? Explain your folder and file structure.
+I have also used the latest Conda  with the last version of the following packages and libraries:
+* os
+* pandas
+* numpy
+* scipy
+* math
+* random
+* seaborn
+* matplotlib
+* PIL
+* wordcloud
+* re
+* itertools
+* spacy
+* en_core_web_sm
+* string
+* collections
+* pickle
+* umap-learn
+* yellowbrick
+* sklearn 
 
-## References
-Include links to your repository, slides and trello/kanban board. Feel free to include any other links associated with your project.
-
-
-[Repository](https://github.com/)  
-[Slides](https://slides.com/)  
+## Links
+[Repository](https://github.com/mikongame/NLP-to-predict-Myers-Briggs-Personality-Type)  
+[Slides](https://drive.google.com/file/d/1rZ-PFzKa57yAYabTOZBMwIlvb0hK7zHN/view?usp=sharing)  
