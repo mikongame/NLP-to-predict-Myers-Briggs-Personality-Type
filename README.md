@@ -50,10 +50,13 @@ Finally I created a Bag of Words by tokenizing posts column using Spacy, so as t
 <img src="images/output_images/mbti_token_cloud.png" align="middle">
 
 ### Preprocessing
-* Overview the general steps you went through to analyze your data in order to test your hypothesis.
-* Document each step of your data exploration and analysis.
-* Include charts to demonstrate the effect of your work.
-* If you used Machine Learning in your final project, describe your feature selection process.
+* I used SpaCy to clean and lemmatise the words from each post.
+* Once cleaned I transformed the corpus of the text to a matrix using TfidfVectorizer.
+* As the sparse matrix was quite big I tried on 3 different ways to reduce its dimensionality:
+  * Using Truncated SVD with 100 componets.
+  * Using UMAP.
+  * Using Truncated SVD and then UMAP on its results.
+* Enclosing preprocessing, I encoded my target labels i two different ways. One would use all 16 types, and the other would rather focus on its 4 axes. Thereafter, I created 6 different datasets that I will use to train the models by combining each dimensionality reduction strategy which each kind of labeling the target variable. 
 
 ### Model Training and Evaluation
 #### Machine Learning Models
