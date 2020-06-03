@@ -38,17 +38,16 @@ I have been working on this dataset from Kaggle, [(MBTI) Myers-Briggs Personalit
 ## Workflow
 ### Exploratory Data Analysis
 First off all I checked how the data looked like as well as it's shape, columns and dtypes. Then I confirmed there where no nulls or duplicates.
+
 <img src="images/output_images/mbti_count.png" align="middle">
 
-<img src="images/mbti_distr_spain.png" align="middle">
-
 When I checked for unique values and target distribution i found out that in posts there was a unique value per entrance, and tha tthe distribution was horribly unbalanced, specially considering distribuitions found by the original researchers and authors of this psychometric measure (MBTI).
-Check shape
-Check dtypes and columns
-Check nulls and duplicates
-Check unique values
-Check target variable distribution
-Target variable distribution visualization
+
+<img src="images/mbti_distr_spain.PNG" align="middle">
+
+Finally I created a Bag of Words by tokenizing posts column using Spacy, so as to use them to create a wordcloud and visualize text before starting cleaning it.
+
+<img src="images/output_images/mbti_token_cloud.png" align="middle">
 
 ### Preprocessing
 * Overview the general steps you went through to analyze your data in order to test your hypothesis.
