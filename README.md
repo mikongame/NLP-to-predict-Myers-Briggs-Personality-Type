@@ -1,6 +1,6 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# NLP to predict Myers-Briggs Personality Type
+# Natural Language Processing to predict Myers-Briggs Personality Type
 *Miguel García Melgar*
 
 *Data Analytics Part-Time, Barcelona, Dec19 *
@@ -60,7 +60,13 @@ Finally I created a Bag of Words by tokenizing posts column using Spacy, so as t
 
 ### Model Training and Evaluation
 #### Machine Learning Models
-*Include this section only if you chose to include ML in your project.*
+From the 6 datasets mentioned above, I trained quite a few models by combining different algorithms for each dataset, and each target, but also with the original dataset size and also with resampled versions:
+* The algorithms used were `GaussianNB`, `LogisticRegression`, `KNeighborsClassifier`, `DecisionTreeClassifier`, `RandomForestClassifier`, `GradientBoostingClassifier` and `MLPClassifier`.
+* So using 7 models, 2 sample sizes, 5 different labels (type + 4 possible dimensions) and 3 dimensionality reduction methods, we ended up training 210 different models. 
+
+<img src="https://github.com/mikongame/NLP-to-predict-Myers-Briggs-Personality-Type/blob/master/images/Model_TSVD_Types.PNG?raw=true" align="middle">
+
+
 * Describe how you trained your model, the results you obtained, and how you evaluated those results.
 #### Deep Learning Models
 #### Fine tuning of the best model
