@@ -98,6 +98,7 @@ I have also used the latest Conda  with the last version of the following packag
 * umap-learn
 * yellowbrick
 * sklearn 
+* keras
 
 ## Links
 [Repository](https://github.com/mikongame/NLP-to-predict-Myers-Briggs-Personality-Type)  
