@@ -73,7 +73,7 @@ From the 6 datasets mentioned above, I trained quite a few models by combining d
 
 ### Conclusion
 
-The model trined has an F1 Score of 0.651957, that is the model is able to predict MBTI personality type 65,2% of times.
+The model tarined has an F1 Score of 0.651957, that is the model is able to predict MBTI personality type 65,2% of times.
 
 Despite not seeming particularly outstanding results, as a multiclass classification (16 types), randomness baseline was located at 6.25%. So predictions from this model would be more than 10 times more accurate than guessing.
 
