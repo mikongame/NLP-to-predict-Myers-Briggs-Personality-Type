@@ -14,9 +14,9 @@
   * [Preprocessing](#preprocessing)
   * [Model Training and Evaluation](#model-training-and-evaluation)
   * [Conclusion](#conclusion)
-- [Future Work](#future-work)
+- [Future improvements](#future-improvements)
 - [Tools and requirements](#tools-and-requirements)
-- [References](#references)
+- [Links](#links)
 
 ## Project Description
 To learn more on NLP while applying its methods to psychological variables, I have been working on this dataset from Kaggle, [(MBTI) Myers-Briggs Personality Type Dataset](https://www.kaggle.com/datasnaek/mbti-type) which holds information on a forum's users' posts and personalities using MBTI.
@@ -69,8 +69,16 @@ From the 6 datasets mentioned above, I trained quite a few models by combining d
 * The table shows the results of training the different algorithms with the results from applying TSVD (100 components) to reduce the dimensionality of the types' dataset without resampling, as the best results were obtained from GraddientBoostingClassiffier using this particular sample.
 #### Deep Learning Models
 
-Before proceed to finte GloVe is an unsupervised learning algorithm for obtaining vector representations for words. Training is performed on aggregated global word-word co-occurrence statistics from a corpus, and the resulting representations showcase interesting linear substructures of the word vector space.
+Before proceeding further with hyperparameters tuning of the ML models previously evalueted, I lets try with a combinatio nof unsupervised ML and DL.
+
+I will use GloVe, an unsupervised learning algorithm for obtaining vector representations for words, altogether with a LSTM recurrent neural network to train two models, one for personality types and another one for dimensional trait axes.
+
+<img src="images/output_images/types_history.png" align="left">
+<img src="images/output_images/dimensions_history.png" align="right">
+
 #### Fine tuning of the best model
+
+<img src="https://github.com/mikongame/NLP-to-predict-Myers-Briggs-Personality-Type/blob/master/images/Model_TSVD_Types.PNG?raw=true" align="middle">
 
 ### Conclusion
 
@@ -78,7 +86,7 @@ The model trained has an F1 Score of 0.651957, that is, this model can predict M
 
 Despite not seeming particularly outstanding results, as a multiclass classification (16 types), randomness baseline was located at 6.25%. So predictions from this model would be more than 10 times more accurate than guessing.
 
-## Future Improvements
+## Future improvements
 Future improvements would include further hyperparameter tuning, training the best couple of models using better-balanced samples and testing the resulting best model on a completely different sample.  
 
 Ideally, I would also like to adapt it to the Big Five model, as is the personality models of the highest predictive validity. Still, adapting it/ doing a new similar model for predicting other psychological metrics out of text would be mesmerizing too.
