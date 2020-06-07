@@ -73,12 +73,14 @@ Before proceeding further with hyperparameters tuning of the ML models previousl
 
 I will use GloVe, an unsupervised learning algorithm for obtaining vector representations for words, altogether with a LSTM recurrent neural network to train two models, one for personality types and another one for dimensional trait axes.
 
-<img src="images/output_images/types_history.png" align="left">
-<img src="images/output_images/dimensions_history.png" align="right">
+<img src="images/output_images/types_history.png" align="middle">
+<img src="images/output_images/dimensions_history.png" align="middle">
 
-#### Fine tuning of the best model
+As you can see the results are lower than the ones using Gradient Booster and Random Forest.
 
-<img src="https://github.com/mikongame/NLP-to-predict-Myers-Briggs-Personality-Type/blob/master/images/Model_TSVD_Types.PNG?raw=true" align="middle">
+#### Fine tuning of the best models
+
+<img src="images/tuned_types.PNG" align="middle">
 
 ### Conclusion
 
