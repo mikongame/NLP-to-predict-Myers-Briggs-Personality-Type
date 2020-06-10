@@ -122,4 +122,4 @@ I have also used the latest Conda  with the last version of the following packag
 
 ## Links
 [Repository](https://github.com/mikongame/NLP-to-predict-Myers-Briggs-Personality-Type)  
-[Slides](https://drive.google.com/file/d/1yxGmtVNFPa4AZYL16zA0mP8AgQVconof/view)  
+[Slides](https://drive.google.com/file/d/1yxGmtVNFPa4AZYL16zA0mP8AgQVconof/view?usp=sharing)  
