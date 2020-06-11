@@ -3,7 +3,7 @@
 # Natural Language Processing to predict Myers-Briggs Personality Type
 *Miguel García Melgar*
 
-*Data Analytics Part-Time, Barcelona, Dec19 *
+*Data Analytics Part-Time, Barcelona, Dec19*
 
 ## Content
 - [Project Description](#project-description)
