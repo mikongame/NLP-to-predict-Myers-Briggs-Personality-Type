@@ -1,7 +1,7 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
 # Natural Language Processing to predict Myers-Briggs Personality Type
-*Miguel García Melgar*
+**Miguel García Melgar**
 
 *Data Analytics Part-Time, Barcelona, Dec19*
 
