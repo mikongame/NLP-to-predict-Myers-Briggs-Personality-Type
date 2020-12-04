@@ -43,7 +43,7 @@ First off all, I checked how the data looked like as well as its shape, columns 
 
 When I checked for unique values and target distribution I found out that in posts there was a unique value per entrance, and that the distribution was horribly unbalanced, especially considering distributions found by the original researchers and authors of this psychometric measure (MBTI).
 
-<img src="images/mbti_distr_spain.PNG" align="middle">
+<img src="https://github.com/mikongame/NLP-to-predict-Myers-Briggs-Personality-Type/blob/master/images/mbti_distr_spain.png?raw=true" align="middle">
 
 Finally, I created a Bag of Words by tokenizing posts column using Spacy, so as to use them to create a word cloud and visualize text before starting cleaning it.
 
